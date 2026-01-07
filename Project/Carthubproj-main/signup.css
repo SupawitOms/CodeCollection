@@ -1,0 +1,130 @@
+/* signup.css — Apply styles for the sign-up form */
+
+:root {
+  --teal-1: #0c3b46;
+  --teal-2: #0d6673;
+  --page: #ececec;
+  --row: #f5f5f5;
+  --head: #d9d9d9;
+  --ink: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--page);
+  color: var(--ink);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0c3b46, #0d6673);
+  color: white;
+  padding: 10px 60px;
+}
+
+/* Left section: logo + nav links */
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* spacing between logo and nav links */
+}
+
+/* LOGO text */
+.logo {
+  text-align: left;
+}
+.logo-script {
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
+  color: #a3c4d3;
+}
+.logo-script span {
+  color: #a3c4d3;
+}
+.logo-tag {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #c5dde3;
+  margin-top: -4px;
+}
+
+/* PAGE */
+.scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:75vh;
+  text-align: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin: 6px 0 18px;
+}
+
+/* FORM */
+.signup-form {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pill {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  font-size: 14px;
+  color: #333;
+}
+
+.gender {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gender header {
+    font-style: bold;
+}
+
+.gender label {
+  font-size: 14px;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+/* BUTTON */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signup-btn:hover {
+  background-color: #45a049;
+}

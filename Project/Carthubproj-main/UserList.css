@@ -1,0 +1,216 @@
+/* UserList.css — Apply styles for user info table */
+
+:root {
+  --teal-1: #0c3b46;
+  --teal-2: #0d6673;
+  --page: #ececec;
+  --row: #f5f5f5;
+  --head: #d9d9d9;
+  --ink: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--page);
+  color: var(--ink);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0c3b46, #0d6673);
+  color: white;
+  padding: 10px 60px;
+}
+
+/* Left section: logo + nav links */
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* spacing between logo and nav links */
+}
+
+/* LOGO text */
+.logo {
+  text-align: left;
+}
+.logo-script {
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
+  color: #a3c4d3;
+}
+.logo-script span {
+  color: #a3c4d3;
+}
+.logo-tag {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #c5dde3;
+  margin-top: -4px;
+}
+
+/* NAV LINKS beside logo */
+.left-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.left-nav nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.left-nav nav a:hover {
+  color: #d1f5ff;
+}
+
+.profile-icon img{ width:50px; 
+  height:50px; 
+  border-radius:50%; 
+  border:2px solid #fff; 
+}
+
+/* PAGE */
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  text-align: center;
+}
+
+/* TABLE */
+.user-table {
+  width: 100%;
+  border-collapse: separate; /* Necessary for rounded corners */
+  border-spacing: 0 14px;
+}
+
+.user-table thead th {
+  border-collapse: separate;
+  border-radius: 10px; /* Rounded corners for cells */
+}
+
+.user-table thead th {
+  background-color: var(--head);
+  text-align: left;
+  padding: 14px 18px;
+}
+
+.user-table tbody td {
+  background-color: var(--row);
+  padding: 12px 18px;
+}
+
+/* Divider between the header and the first row */
+
+.header-divider {
+  height: 2px;  /* Thinner divider */
+  width: 100%;  /* Ensure it spans the entire width of the table */
+  border-bottom: 2px solid #dadada;  /* Light grey divider */
+  margin: 0;  /* Remove any extra margin */
+}
+
+
+
+.user-table tbody td:first-child,
+.user-table tbody td:last-child {
+  font-weight: bold;
+}
+
+.user-table tbody td.actions {
+  text-align: center;
+}
+
+.user-table .update-btn,
+.user-table .delete-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user-table .delete-btn {
+  background: #f44336;
+}
+
+.user-table .update-btn:hover {
+  background: #45a049;
+}
+
+.user-table .delete-btn:hover {
+  background: #e53935;
+}
+
+/* PAGINATION */
+.pager {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.pager a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.pager a:hover {
+  color: #333;          
+}
+
+.pager a.active {
+  color: #007bff;       
+  text-decoration: underline;  
+}
+
+/* Set column widths */
+.user-table thead th:nth-child(1),
+.user-table tbody td:nth-child(1) { width: 15%; } /* User ID */
+
+.user-table thead th:nth-child(2),
+.user-table tbody td:nth-child(2) { width: 15%; } /* Card ID */
+
+.user-table thead th:nth-child(3),
+.user-table tbody td:nth-child(3) { width: 15%; } /* Username */
+
+.user-table thead th:nth-child(4),
+.user-table tbody td:nth-child(4) { width: 20%; } /* Name */
+
+.user-table thead th:nth-child(5),
+.user-table tbody td:nth-child(5) { width: 25%; } /* Email */
+
+.user-table thead th:nth-child(6),
+.user-table tbody td:nth-child(6) { width: 10%; } /* Phone */
+
+.user-table thead th:nth-child(7),
+.user-table tbody td:nth-child(7) { width: 10%; } /* Gender */
+
+.user-table thead th:nth-child(8),
+.user-table tbody td:nth-child(8) { width: 10%; } /* Room */
+
+.user-table thead th:nth-child(9),
+.user-table tbody td:nth-child(9) { width: 10%; } /* Building */
